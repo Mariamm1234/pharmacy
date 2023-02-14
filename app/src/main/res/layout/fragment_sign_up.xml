@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/signimg" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="User Name"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_person_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Email"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebEmailAddress"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Password"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="#B4AEAE"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                    app:startIconTint="#8692f7">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebPassword"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Phone Number"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_phone_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Address"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_home_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Date Rigester"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:startIconDrawable="@drawable/ic_baseline_edit_calendar_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dateRigester"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/big_rounded"
+                    android:hint="Age"
+                    android:paddingStart="10dp"
+                    android:textColorHint="#958C8C"
+                    app:boxStrokeColor="@android:color/black"
+                    app:boxStrokeWidth="3dp"
+                    app:boxStrokeWidthFocused="7dp"
+                    app:errorContentDescription="Invalid Username"
+                    app:errorTextColor="#B11818"
+                    app:hintAnimationEnabled="true"
+                    app:startIconDrawable="@drawable/ic_baseline_person_24"
+                    app:startIconTint="#8692f7">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:textSize="20dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/remebermebox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/checkbox" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Remember me"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/welcome_button"
+                    android:paddingHorizontal="50dp"
+                    android:paddingVertical="10dp"
+                    android:text="SignUp"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

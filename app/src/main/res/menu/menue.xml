@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+<item android:title="Profile">
+    <menu>
+        <group android:checkableBehavior="single">
+
+
+        <item
+            android:icon="@drawable/ic_logout_svgrepo_com"
+            android:title="Logout"
+            android:id="@+id/logout"/>
+        <item
+            android:title="Edit"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:id="@+id/edit"
+            />
+
+        </group>
+    </menu>
+</item>
+    <item android:title="Apply Option">
+
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:icon="@drawable/ic_baseline_image_24"
+                android:title="Add image"
+                android:id="@+id/image"
+                />
+            <item
+                android:title="Write prescription"
+                android:icon="@drawable/ic_baseline_note_add_24"
+                android:id="@+id/prescription"
+                />
+                <item
+                    android:title="complete prescription"
+                    android:id="@+id/comprescription"
+                   android:icon="@drawable/ic_baseline_playlist_add_check_24"
+                    />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+    <item android:title="Chat"
+      android:icon="@drawable/ic_baseline_chat_24"
+        android:id="@+id/chat"
+        />
+    </group>
+    <item android:title="Patient">
+
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:icon="@drawable/ic_baseline_note_add_24"
+                android:title="My prescriptions"
+                android:id="@+id/p.prescription"
+                />
+            <item
+                android:title="My medicines"
+                android:id="@+id/p.medicine"
+                android:icon="@drawable/ic_baseline_medical_services_24"
+                />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Doctor">
+
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:icon="@drawable/ic_baseline_note_add_24"
+                android:title="All prescriptions"
+                android:id="@+id/d.prescription"
+                />
+            <item
+                android:title="All medicines"
+                android:id="@+id/d.medicine"
+                android:icon="@drawable/ic_baseline_medical_services_24"
+                />
+            <item
+                android:title="All doctors"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:id="@+id/doctors"
+                />
+            <item
+                android:title="My patients"
+                android:icon="@drawable/ic_baseline_person_24"
+                android:id="@+id/patient"
+                />
+            </group>
+        </menu>
+    </item>
+    <group android:checkableBehavior="single">
+    <item
+        android:title="New nedicines"
+        android:id="@+id/new.mid"
+        />
+    </group>
+</menu>

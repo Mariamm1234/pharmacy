@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EditProfile"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="UserName :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="UserName"
+                android:paddingHorizontal="10dp" />
+            <TextView
+                android:id="@+id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Email :"
+                android:layout_below="@+id/use"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/mailBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/use"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Email"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mail"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Customer Gender :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/passBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/big_rounded"
+                android:hint="Gender"
+                android:layout_below="@+id/pass"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/use"/>
+
+            <TextView
+                android:id="@+id/confirmpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/passBox"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Detection Date :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/confirmpassBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/confirmpass"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Date"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/phnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmpassBox"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Register Date :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/pjnumBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phnum"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Date"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/newAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresBox"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Patient Age :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/newAgeBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/newAge"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Age"
+                android:layout_marginBottom="5dp"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/addres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pjnumBox"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Patient Address :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/addresBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/addres"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Address"
+                android:paddingHorizontal="10dp" />
+            <TextView
+                android:id="@+id/medicines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Medicines :"
+                android:layout_below="@id/newAgeBox"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/mdicinesBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/newAgeBox"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="medicines"
+                android:paddingHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/PatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medicines"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Patient Name :"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/PatNameBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/PatName"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="UserName"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="10dp" />
+            <TextView
+                android:id="@+id/pharmacist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_below="@id/PatNameBox"
+                android:text="Pharmacist Name :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/pharmacistnameBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/pharmacist"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:background="@drawable/big_rounded"
+                android:hint="Name"
+                android:paddingHorizontal="10dp" />
+            <TextView
+                android:id="@+id/pharmacistEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Pharmacist Email :"
+                android:layout_below="@+id/pharmacistnameBox"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/pharmacistEmailBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:layout_below="@id/pharmacistEmail"
+                android:background="@drawable/big_rounded"
+                android:hint="Email"
+                android:paddingHorizontal="10dp" />
+            <TextView
+                android:id="@+id/prescriptionItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_below="@id/pharmacistEmailBox"
+                android:text="Prescription Items :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/prescriptionItemsBox"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/use"
+                android:layout_below="@id/prescriptionItems"
+                android:background="@drawable/big_rounded"
+                android:hint="Items"
+                android:paddingHorizontal="10dp" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/donecom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/welcome_button"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="10dp"
+            android:text="Done"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </LinearLayout>
+</ScrollView>
